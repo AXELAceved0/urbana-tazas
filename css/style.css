@@ -1,0 +1,165 @@
+/** ---------- RESET----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+/** -----HEADER----- */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 160px;
+    background-color: #EBE4D1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header section img{
+    width: 450px;
+    height: 110px;
+    object-fit: cover;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+header nav ul li{   
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+header nav ul li a{
+    text-decoration:none;
+    color:#E55604;
+}
+
+.hero nav ul li:hover a{
+    background-color: #E55604;
+    color: #EBE4D1;
+    padding: 10px
+}
+
+
+
+
+/** ----- MAIN ----*/
+.fondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#E55604;
+    width: 100%;
+    height: 620px;
+    background-image: url(../img/fondo.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo div a{
+    text-decoration: none;
+    color: #E55604;
+}
+
+.fondo div h2{
+    display: flex;
+    justify-content: center;
+}
+
+.productos{
+    background-color: #E55604;
+    padding: 3px;
+    text-align: center;
+    color: #EBE4D1;
+}
+
+.ceramica{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.ceramica div{
+    border: 3px solid #E55604;
+    width: 256px;
+    height:370px;
+    margin: 25px;
+    text-align: center;
+}
+
+.ceramica div img{
+    width: 250px;
+    height: 250px;
+}
+
+footer{
+    display: flex;
+    background-color: #26577C;
+    flex-wrap: nowrap;
+    flex-direction: column; 
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E55604;
+    color: #EBE4D1;
+}
+
+.contactos h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    background-color: #E55604;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.formulario h3{
+    font-size: 35px;
+    text-align: center;
+    color: #26577C;
+    margin: 25px;
+}
+.formulario input{
+    margin: 10px;
+    width: 50%;
+    height: 40px;
+}
+
+.formulario textarea{
+    width: 50%;
+}
+
+.boton{
+    background-color: #EBE4D1;
+    border: none;
+    color: #26577C;
+    font-size: 23px;
+    margin: 5px;
+}

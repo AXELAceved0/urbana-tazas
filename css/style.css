@@ -98,6 +98,7 @@ header nav ul li a{
 
 .ceramica div{
     border: 3px solid #E55604;
+    border-radius: 5px;
     width: 256px;
     height:370px;
     margin: 25px;
@@ -112,7 +113,6 @@ header nav ul li a{
 footer{
     display: flex;
     background-color: #26577C;
-    flex-wrap: nowrap;
     flex-direction: column; 
     color: #EBE4D1;
 }
@@ -121,8 +121,11 @@ footer .pie{
     margin: 10px;
     font-size: 35px;
 }
+footer div{
+    margin: 10px;
+}
 
-footer div {
+footer .redes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,13 +133,13 @@ footer div {
 }
 
 footer div ul li{
-    margin: 7px;
+    margin: 5px;
+    padding: 5px;
 list-style: none;
 }
 
 footer div a{
     margin: 10px;
-
 }
 
 

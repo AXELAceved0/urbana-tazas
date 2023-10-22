@@ -90,7 +90,7 @@ header nav ul li a{
 .ceramica{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -104,7 +104,7 @@ header nav ul li a{
 }
 
 .ceramica div img{
-    width: 250px;
+    width: 251px;
     height: 250px;
 }
 
@@ -113,7 +113,31 @@ footer{
     background-color: #26577C;
     flex-wrap: nowrap;
     flex-direction: column; 
+    color: #EBE4D1;
 }
+
+footer .pie{
+    margin: 10px;
+    font-size: 35px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer div ul li{
+    margin: 7px;
+list-style: none;
+}
+
+footer div a{
+    margin: 10px;
+
+}
+
 
 .contactos{
     display: flex;
@@ -130,6 +154,7 @@ footer{
     box-sizing: border-box;
     font-family: 'Itim', cursive;
     background-color: #E55604;
+    
 }
 
 

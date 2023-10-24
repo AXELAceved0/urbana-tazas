@@ -242,6 +242,20 @@ footer div a{
 }
 
 /** ----- responsive -----*/
-@media screen(max-width) {
-    
+
+@media screen and(max-width:1190px){
+    .ceramica{
+        width: 99%;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-auto-rows: 350px;
+        grid-template-areas:
+        "canasta plato bob"
+        "chopp emojic emojic"
+        "chopp cactus stich"
+        "spider patitas patitas"
+        ;
+        gap: 15px;
+        margin: 10px;
+    }
 }

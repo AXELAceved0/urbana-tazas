@@ -90,7 +90,8 @@ header nav div a img {
         "spider patitas patitas"
     ;
     gap: 15px;
-    margin: 10px;
+    margin: 7px;
+    padding: 6px;
 }
 
 .ceramica div {
@@ -285,6 +286,14 @@ footer div a i:hover {
             "patitas patitas"
             "patitas patitas"
         ;
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1033px) {
+    header .menu{
+        font-size: 18px;
     }
 }
 
@@ -297,12 +306,15 @@ footer div a i:hover {
             "plato"
             "bob" 
             "chopp"
+            "chopp"
             "cactus"
             "emojic"
             "stich" 
             "spider"
             "patitas"
         ;
+        margin: 2px;
+        padding: 9px;
     }
 }
 
@@ -331,6 +343,10 @@ footer div a i:hover {
         .fondo div a:hover{
             color: #E55604;
         }
+        header nav div a img {
+            width: 360px;
+            height: 90px;
+        }
     }
 
     @media screen and (max-width:420px) {
@@ -339,5 +355,15 @@ footer div a i:hover {
         }
         .fondo h2{
             font-size: 17px;
+        }
+        header nav div a img {
+            width: 330px;
+            height: 75px;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+        header nav div a img {
+            width: 315px;
         }
     }

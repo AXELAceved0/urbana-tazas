@@ -15,23 +15,25 @@ header .menu {
     color: #E55604;
     font-size: 20px;
     padding: 10px;
-    text-decoration: none;
 }
 
 header .menu:hover {
     color: #26577C;
-    background-color: #E55604;
+}
+
+header .menu div .barra{
+    color: #E55604;
+    padding: 10px;
 }
 
 header .menu div .barra:hover{
     background-color: #E55604;
     color: #EBE4D1;
     border-radius: 4px;
-    padding: 3px;
 }
 
 header nav div a img {
-    width: 450px;
+    width: 435px;
     height: 110px;
     object-fit: cover;
 }
@@ -261,7 +263,7 @@ footer div a i:hover {
 
     @media screen and (max-width:650px) {
         .fondo{
-            background-image: url(../img/fondo2jpg.jpg);
+            background-image: url(../img/fondo.png);
         }
         .fondo h1{
             font-size: 25px;

@@ -24,6 +24,7 @@ header .menu:hover {
 header .menu div .barra {
     color: #E55604;
     padding: 10px;
+    margin: 5px;
 }
 
 header .menu div .barra:hover {
@@ -244,14 +245,28 @@ footer div a i:hover {
     .fondo {
         background-attachment: local;
     }
-}
-
-
-@media screen and (max-width:1033px) {
-    header .menu {
-        font-size: 18px;
+    header .menu div .barra{
+        font-size: 17px;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
 }
+
+@media screen and (max-width:995px) {
+    header .menu .lateral{
+        flex-wrap: inherit;
+        align-items: flex-start;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+    
+}
+
+
+
 
 @media screen and (max-width:725px) {
     .ceramica {

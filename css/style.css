@@ -97,7 +97,10 @@ header nav div a img {
     flex-wrap: wrap;
     margin: 15px;
     padding: 10px;
-    gap: 15px;
+    gap: 25px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-between;
 }
 
 .ceramica div a {
@@ -123,7 +126,7 @@ header nav div a img {
     align-items: center;
 }
 
-.nosotros div{
+.nosotros div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,18 +179,18 @@ header nav div a img {
 
 .formulario input {
     margin: 10px;
-    width: 50%;
+    width: 70%;
     height: 40px;
 }
 
 .formulario textarea {
-    width: 50%;
+    width: 70%;
 }
 
 .boton {
-    background-color: #EBE4D1;
+    background-color: #E55604;
     border: none;
-    color: #26577C;
+    color: #EBE4D1;
     font-size: 23px;
     margin: 5px;
 }
@@ -247,7 +250,8 @@ footer div a i:hover {
     .fondo {
         background-attachment: local;
     }
-    header .menu lateral .barra{
+
+    header .menu .lateral .barra {
         font-size: 17px;
         flex-wrap: inherit;
         align-items: center;
@@ -256,15 +260,16 @@ footer div a i:hover {
     }
 }
 
+
 @media screen and (max-width:995px) {
-    header .menu .lateral{
+    header .menu .lateral {
         flex-wrap: inherit;
         align-items: flex-start;
         flex-direction: column;
         align-content: flex-start;
         justify-content: flex-start;
     }
-    
+
 }
 
 
@@ -303,6 +308,10 @@ footer div a i:hover {
         font-size: 20px;
     }
 
+    .fondo {
+        background-image: url(../img/fondo-3.png);
+    }
+
     .fondo div a:hover {
         color: #E55604;
     }
@@ -331,11 +340,5 @@ footer div a i:hover {
 @media screen and (max-width:375px) {
     header nav div a img {
         width: 315px;
-    }
-    .ceramica{
-        margin: 5px;
-        padding: 7px;
-        gap: 50px;
-        flex-direction: column;
     }
 }

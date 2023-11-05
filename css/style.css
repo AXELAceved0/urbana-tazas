@@ -332,4 +332,10 @@ footer div a i:hover {
     header nav div a img {
         width: 315px;
     }
+    .ceramica{
+        margin: 5px;
+        padding: 7px;
+        gap: 50px;
+        flex-direction: column;
+    }
 }

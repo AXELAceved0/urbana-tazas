@@ -49,7 +49,7 @@ header nav div a img {
     color: #E55604;
     width: 100%;
     height: 620px;
-    background-image: url(../img/fondo.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -63,16 +63,16 @@ header nav div a img {
 }
 
 .fondo div h1 {
-    color: black;
+    color: #EBE4D1;
 }
 
 .fondo div a {
     text-decoration: none;
-    color: black;
+    color: #EBE4D1;
 }
 
 .fondo div a:hover {
-    color: #EBE4D1;
+    color: black;
 }
 
 .fondo div h2 {
@@ -167,7 +167,8 @@ header nav div a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    background-color:#EBE4D1;
+    padding: 20px;
 }
 
 .formulario h3 {
@@ -181,18 +182,33 @@ header nav div a img {
     margin: 10px;
     width: 70%;
     height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #E55604;
+}
+
+.formulario input::placeholder{
+    color: #e55604a6;
 }
 
 .formulario textarea {
     width: 70%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #E55604;
 }
 
-.boton {
+.formulario textarea::placeholder{
+    color: #e55604a6;
+}
+
+.formulario .boton {
     background-color: #E55604;
-    border: none;
     color: #EBE4D1;
-    font-size: 23px;
+    font-size: 26px;
     margin: 5px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 footer {
@@ -273,10 +289,9 @@ footer div a i:hover {
 }
 
 
-
 @media screen and (max-width:650px) {
     .fondo {
-        background-image: url(../img/fondo.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo.png);
     }
 
     .fondo h1 {
@@ -309,7 +324,7 @@ footer div a i:hover {
     }
 
     .fondo {
-        background-image: url(../img/fondo-3.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo-3.png);
     }
 
     .fondo div a:hover {

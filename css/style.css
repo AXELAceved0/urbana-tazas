@@ -25,18 +25,25 @@ header .menu div .barra {
     color: #E55604;
     padding: 10px;
     margin: 5px;
+    transition: 1s;
 }
 
 header .menu div .barra:hover {
     background-color: #E55604;
     color: #EBE4D1;
     border-radius: 4px;
+    transform: scale(1.1);
 }
 
 header nav div a img {
     width: 435px;
     height: 110px;
     object-fit: cover;
+    transition: 1s;
+}
+
+header nav div a img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -49,7 +56,7 @@ header nav div a img {
     color: #E55604;
     width: 100%;
     height: 620px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -69,10 +76,12 @@ header nav div a img {
 .fondo div a {
     text-decoration: none;
     color: #EBE4D1;
+    transition: 1s;
 }
 
 .fondo div a:hover {
-    color: black;
+    color: #E55604;
+    transform: scale(1.2);
 }
 
 .fondo div h2 {
@@ -97,10 +106,21 @@ header nav div a img {
     flex-wrap: wrap;
     margin: 15px;
     padding: 10px;
-    gap: 25px;
+    gap: 30px;
     justify-content: space-around;
     flex-direction: row;
     align-content: space-between;
+}
+
+.ceramica .card {
+    transition: 1s;
+}
+
+.ceramica .card:hover {
+    transform: scale(1.1);
+    box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
 }
 
 .ceramica div a {
@@ -111,11 +131,13 @@ header nav div a img {
     padding: 7px;
     text-decoration: none;
     font-size: 20px;
+    transition: 1s;
 }
 
 .ceramica div a:hover {
     color: #E55604;
     background-color: #EBE4D1;
+    transform: scale(1.2);
 }
 
 .nosotros {
@@ -167,7 +189,7 @@ header nav div a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#EBE4D1;
+    background-color: #EBE4D1;
     padding: 20px;
 }
 
@@ -187,7 +209,7 @@ header nav div a img {
     border-bottom: 3px solid #E55604;
 }
 
-.formulario input::placeholder{
+.formulario input::placeholder {
     color: #e55604a6;
 }
 
@@ -198,7 +220,7 @@ header nav div a img {
     border-bottom: 3px solid #E55604;
 }
 
-.formulario textarea::placeholder{
+.formulario textarea::placeholder {
     color: #e55604a6;
 }
 
@@ -231,6 +253,14 @@ footer .redes {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .redes a {
+    transition: 1s;
+}
+
+footer .redes a:hover {
+    transform: scale(1.2);
 }
 
 footer div ul li {
@@ -291,7 +321,7 @@ footer div a i:hover {
 
 @media screen and (max-width:650px) {
     .fondo {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo.png);
     }
 
     .fondo h1 {
@@ -324,7 +354,7 @@ footer div a i:hover {
     }
 
     .fondo {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.767)) ,url(../img/fondo-3.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo-3.png);
     }
 
     .fondo div a:hover {
@@ -349,6 +379,12 @@ footer div a i:hover {
     header nav div a img {
         width: 330px;
         height: 75px;
+    }
+
+
+    .ceramica {
+        margin: 3px;
+        padding: 31px;
     }
 }
 

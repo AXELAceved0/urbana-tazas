@@ -1,0 +1,25 @@
+$color-primario: #EBE4D1;
+$color-secundario: #E55604;
+$color-terciario: #26577C;
+
+
+$size: 
+    50px,
+    35px,
+    25px,
+    20px,
+    17px,
+    15px,
+    12px;
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex ($flex, $direction, $item) {
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $item;
+}

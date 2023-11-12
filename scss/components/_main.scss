@@ -1,0 +1,180 @@
+/*!--- index ----*/
+
+.fondo{
+    @extend %flex;
+    flex-direction: column;
+    color: $color-secundario;
+    width: 100%;
+    height: 620px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: $color-primario;
+        }
+
+        a{
+            text-decoration: none;
+            color: $color-primario;
+            transition: 1s;
+            &:hover{
+                color: $color-secundario;
+                transform: scale(1.2);
+            }
+            h2{
+                text-align: center;
+                border: solid 2px;
+                border-radius: 10px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/*---- PRODUCTOS ----*/
+
+.productos{
+    h2{
+        background-color: $color-secundario;
+        padding: 3px;
+        text-align: center;
+        color: $color-primario;
+    
+    }
+}
+.ceramica{
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+    gap: 30px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-between;
+    .card{
+        transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+    box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 19px 24px 22px -5px rgba(0, 0, 0, 0.73);
+        }
+        }
+        div{
+            a{
+                color: $color-primario;
+                background-color: $color-secundario;
+                border: transparent;
+                border-radius: 5px;
+                padding: 7px;
+                text-decoration: none;
+                font-size: nth($size,4);
+                transition: 1s;
+                &:hover{
+                    color: $color-secundario;
+                    background-color: $color-primario;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    /*-----PAGOS-Y-ENVIOS-----*/
+
+
+
+
+        /*-----NOSOTROS-----*/
+
+.nosotros{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        text-align: center;
+        color: #ebe4d1;
+        background-color: #E55604;
+        font-size: nth($size,2);
+        padding: 6px;
+        border-radius: 6px;
+    }
+    div{
+        @extend %flex;
+        flex-direction: row;
+        width: 75%;
+        margin: 10px;
+        padding: 10px;
+        img{
+            width: 350px;
+            height: 350px;
+            box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
+            -webkit-box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
+            -moz-box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
+        }
+        p{
+            padding: 10px;
+            font-size: nth($size,4);
+            color: black;
+            margin: 20px;
+        }
+    }
+}
+
+
+        /*-----CONTACTO-----*/
+
+.contactos{
+@extend %flex;
+    flex-direction: column;
+    background-color: $color-secundario;
+    color: $color-primario;
+    h2{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Itim', cursive;
+        background-color: $color-secundario;
+    }
+}
+.formulario{
+    @include flex (flex,column,center);
+    background-color: $color-primario;
+    padding: 20px;
+    input{
+        margin: 10px;
+        width: 70%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $color-secundario;
+        &::placeholder{
+            color: #e55604a6;
+        }
+    }
+    textarea{
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $color-secundario;
+        &::placeholder{
+            color: #e55604a6;
+        }
+    }
+    .boton{
+        background-color: $color-secundario;
+        color: $color-primario;
+        font-size: nth($size,3);
+        margin: 5px;
+        width: 200px;
+        border-radius: 10px;
+    }
+}

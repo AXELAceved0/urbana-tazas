@@ -208,9 +208,9 @@ main .pagos img {
 
 .contactos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #E55604;
     color: #EBE4D1;
 }
@@ -233,12 +233,6 @@ main .pagos img {
     padding: 20px;
 }
 
-.formulario h3 {
-    font-size: 35px;
-    text-align: center;
-    color: #26577C;
-    margin: 25px;
-}
 
 .formulario input {
     margin: 10px;

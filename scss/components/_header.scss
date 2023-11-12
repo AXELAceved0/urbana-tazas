@@ -1,0 +1,39 @@
+/*!--- index ----*/
+
+header{
+    .menu{  
+        background-color: $color-primario;
+        color: $color-secundario;
+        font-size: nth ($size,2);
+        padding: 10px;
+        &:hover{
+            color: $color-terciario;
+        }
+        div{
+            a{
+                img{
+                    width: 435px;
+                    height: 110px;
+                    object-fit: cover;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .barra{
+                color: $color-secundario;
+                padding: 10px;
+                margin: 5px;
+                transition: 1s;
+                &:hover{
+                    background-color: $color-secundario;
+                    color: $color-primario;
+                    border-radius: 4px;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+

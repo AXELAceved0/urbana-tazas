@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    background-color: $color-terciario;
+    flex-direction: column;
+    color: $color-primario;
+    .pie{
+        margin: 10px;
+        font-size: nth($size,2);
+    }
+    div{
+        margin: 10px;
+        ul{
+            li{
+                margin: 5px;
+                padding: 5px;
+                font-size:nth($size,4);
+                list-style: none;
+                i{
+                    margin: 5px;
+                    font-size:nth($size,2);
+                }
+            }
+        }
+    }
+    .redes{
+        @extend %flex;
+        a{
+            margin: 10px;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+            }
+            i{
+                font-size: nth($size,1);
+                color: $color-primario;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}

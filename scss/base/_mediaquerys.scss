@@ -53,6 +53,20 @@
     }
 }
 
+@media screen and (max-width: 780px) {
+    .medios {
+        h3 {
+            font-size: nth($size, 3);
+        }
+    }
+
+    .envios {
+        h4 {
+            font-size: nth($size, 2);
+        }
+    }
+}
+
 @media screen and (max-width:650px) {
     .fondo {
         background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo.png);
@@ -146,16 +160,18 @@
             }
         }
     }
-header{
-    .menu{
-        .lateral{
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+
+    header {
+        .menu {
+            .lateral {
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+            }
         }
     }
-}
+
     header {
         nav {
             a {
@@ -178,6 +194,12 @@ header{
             p {
                 font-size: nth($size, 6);
             }
+        }
+    }
+
+    .envios {
+        h4 {
+            font-size: nth($size, 4);
         }
     }
 }

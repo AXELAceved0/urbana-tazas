@@ -106,6 +106,47 @@ header .menu {
       transform: scale(1.2); }
 
 /*-----PAGOS-Y-ENVIOS-----*/
+.medios h3 {
+  text-align: center;
+  color: #ebe4d1;
+  background-color: #E55604;
+  font-size: 35px;
+  padding: 6px;
+  margin: 0; }
+
+.medios h4 {
+  font-size: 55px;
+  color: #EBE4D1; }
+
+.pagos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .pagos img {
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 90px;
+    transition: 2s; }
+    .pagos img:hover {
+      transform: scale(1.2); }
+
+.envios {
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/envios.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; }
+  .envios h4 {
+    font-size: 55px;
+    color: #EBE4D1; }
+
 /*-----NOSOTROS-----*/
 .nosotros {
   display: flex;
@@ -235,6 +276,12 @@ footer {
     align-content: flex-start;
     justify-content: flex-start; } }
 
+@media screen and (max-width: 780px) {
+  .medios h3 {
+    font-size: 25px; }
+  .envios h4 {
+    font-size: 35px; } }
+
 @media screen and (max-width: 650px) {
   .fondo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo.png); }
@@ -274,7 +321,9 @@ footer {
   .nosotros h3 {
     font-size: 20px; }
   .nosotros div p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .envios h4 {
+    font-size: 20px; } }
 
 @media screen and (max-width: 420px) {
   .fondo div h1 {

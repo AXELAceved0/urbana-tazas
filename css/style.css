@@ -183,7 +183,7 @@ header nav div a img:hover {
 }
 
 
-.medios h3{
+.medios h3 {
     text-align: center;
     color: #ebe4d1;
     background-color: #E55604;
@@ -215,7 +215,7 @@ header nav div a img:hover {
 .envios {
     display: flex;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)),url(../img/envios.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/envios.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
@@ -224,7 +224,7 @@ header nav div a img:hover {
     background-attachment: fixed;
 }
 
-.envios h4{
+.envios h4 {
     font-size: 55px;
     color: #EBE4D1;
 }
@@ -390,10 +390,15 @@ footer div a i:hover {
 
 @media screen and (max-width: 780px) {
 
-    .medios h3{
+    .medios h3 {
         font-size: 25px;
     }
-    .envios h4{
+
+    .envios {
+        background-attachment: local;
+    }
+
+    .envios h4 {
         font-size: 35px;
     }
 }
@@ -462,7 +467,7 @@ footer div a i:hover {
         font-size: 15px;
     }
 
-    .envios h4{
+    .envios h4 {
         font-size: 22px;
     }
 }
@@ -502,3 +507,36 @@ footer div a i:hover {
         width: 315px;
     }
 }
+
+
+
+/*----acordeon*/
+
+.acordeon-1{
+    background-color: #26577C;
+    color: #ebe4d1;
+    font-size: 28px;
+}
+
+.acordeon-1 .acordeon-2 {
+    background-color: #26577C;
+    border: transparent;
+}
+
+.acordeon-1 .acordeon-2 button{
+    background-color: #26577C;
+    color: #ebe4d1;
+    font-size: 28px;
+    width: 400px;
+}
+
+.acordeon-1 div ul li{
+    font-size: 25px;
+    color: #ebe4d1;
+    width: 330px;
+}
+
+.acordeon-2 button h3 i{
+    padding: 8px;
+}
+

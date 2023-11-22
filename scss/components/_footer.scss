@@ -1,40 +1,85 @@
-footer{
+footer {
     display: flex;
-    background-color: $color-terciario;
+    background-color: #26577C;
     flex-direction: column;
-    color: $color-primario;
-    .pie{
-        margin: 10px;
-        font-size: nth($size,2);
+    color: #EBE4D1;
+
+    .pie {
+        text-align: center;
+        color: #ebe4d1;
+        background-color: #E55604;
+        font-size: 35px;
+        padding: 8px;
+        margin: 0;
     }
-    div{
-        margin: 10px;
-        ul{
-            li{
-                margin: 5px;
-                padding: 5px;
-                font-size:nth($size,4);
-                list-style: none;
-                i{
-                    margin: 5px;
-                    font-size:nth($size,2);
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px;
+        padding: 10px;
+
+        h3 {
+            font-size: 35px;
+        }
+
+        h4 {
+            font-size: 35px;
+        }
+    }
+
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+
+        h3 {
+            font-size: 40px;
+            padding: 10px;
+        }
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            margin: 10px;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            i {
+                font-size: 50px;
+                color: #EBE4D1;
+
+                &:hover {
+                    color: #E55604;
                 }
             }
         }
-    }
-    .redes{
-        @extend %flex;
-        a{
+
+        a {
             margin: 10px;
             transition: 1s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.2);
             }
-            i{
-                font-size: nth($size,1);
-                color: $color-primario;
-                &:hover{
-                    color: $color-secundario;
+
+            i {
+                font-size: 50px;
+                color: #EBE4D1;
+
+                &:hover {
+                    color: #E55604;
                 }
             }
         }

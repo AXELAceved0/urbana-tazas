@@ -308,7 +308,7 @@ footer .pie {
     margin: 0;
 }
 
-footer div {
+footer .contacto {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -316,11 +316,11 @@ footer div {
     padding: 10px;
 }
 
-footer div h3{
+footer .contacto h3{
     font-size: 35px;
 }
 
-footer div h4{
+footer .contacto h4{
     font-size: 35px;
 }
 
@@ -351,11 +351,6 @@ footer .redes a:hover {
     transform: scale(1.2);
 }
 
-
-footer div ul li i {
-    margin: 5px;
-    font-size: 35px;
-}
 
 footer div a {
     margin: 10px;

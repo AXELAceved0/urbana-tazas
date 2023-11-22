@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
-.fondo, .nosotros div, .contactos, footer .redes {
+.fondo, .nosotros div, .contactos {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -226,28 +226,55 @@ footer {
   flex-direction: column;
   color: #EBE4D1; }
   footer .pie {
-    margin: 10px;
-    font-size: 35px; }
+    text-align: center;
+    color: #ebe4d1;
+    background-color: #E55604;
+    font-size: 35px;
+    padding: 8px;
+    margin: 0; }
   footer div {
-    margin: 10px; }
-    footer div ul li {
-      margin: 5px;
-      padding: 5px;
-      font-size: 20px;
-      list-style: none; }
-      footer div ul li i {
-        margin: 5px;
-        font-size: 35px; }
-  footer .redes a {
-    margin: 10px;
-    transition: 1s; }
-    footer .redes a:hover {
-      transform: scale(1.2); }
-    footer .redes a i {
-      font-size: 50px;
-      color: #EBE4D1; }
-      footer .redes a i:hover {
-        color: #E55604; }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    padding: 10px; }
+    footer div h3 {
+      font-size: 35px; }
+    footer div h4 {
+      font-size: 35px; }
+  footer .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column; }
+    footer .mapa h3 {
+      font-size: 40px;
+      padding: 10px; }
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .redes a {
+      margin: 10px;
+      transition: 1s; }
+      footer .redes a:hover {
+        transform: scale(1.2); }
+      footer .redes a i {
+        font-size: 50px;
+        color: #EBE4D1; }
+        footer .redes a i:hover {
+          color: #E55604; }
+    footer .redes a {
+      margin: 10px;
+      transition: 1s; }
+      footer .redes a:hover {
+        transform: scale(1.2); }
+      footer .redes a i {
+        font-size: 50px;
+        color: #EBE4D1; }
+        footer .redes a i:hover {
+          color: #E55604; }
 
 /*----MEDIA QUERIES-----*/
 @media screen and (max-width: 1150px) {

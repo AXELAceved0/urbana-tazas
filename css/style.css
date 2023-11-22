@@ -168,16 +168,17 @@ header nav div a img:hover {
 }
 
 .nosotros img {
-    width: 350px;
-    height: 350px;
+    width: 385px;
+    height: 385px;
     box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
     -webkit-box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
     -moz-box-shadow: -1px 2px 54px -1px rgba(0, 0, 0, 0.66);
 }
 
 .nosotros p {
+    text-align: center;
     padding: 10px;
-    font-size: 25px;
+    font-size: 28px;
     color: black;
     margin: 20px;
 }
@@ -299,12 +300,41 @@ footer {
 }
 
 footer .pie {
-    margin: 10px;
+    text-align: center;
+    color: #ebe4d1;
+    background-color: #E55604;
     font-size: 35px;
+    padding: 8px;
+    margin: 0;
 }
 
 footer div {
-    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+footer div h3{
+    font-size: 35px;
+}
+
+footer div h4{
+    font-size: 35px;
+}
+
+footer .mapa{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+footer .mapa h3{
+    font-size: 40px;
+    padding: 10px;
 }
 
 footer .redes {
@@ -321,12 +351,6 @@ footer .redes a:hover {
     transform: scale(1.2);
 }
 
-footer div ul li {
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    list-style: none;
-}
 
 footer div ul li i {
     margin: 5px;

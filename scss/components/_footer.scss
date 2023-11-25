@@ -1,19 +1,19 @@
 footer {
     display: flex;
-    background-color: #26577C;
+    background-color: $color-terciario;
     flex-direction: column;
-    color: #EBE4D1;
+    color: $color-primario;
 
     .pie {
         text-align: center;
-        color: #ebe4d1;
-        background-color: #E55604;
-        font-size: 35px;
+        color: $color-primario;
+        background-color: $color-secundario;
+        font-size: nth($size, 2);
         padding: 8px;
         margin: 0;
     }
 
-    div {
+    .contacto {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -21,19 +21,17 @@ footer {
         padding: 10px;
 
         h3 {
-            font-size: 35px;
+            font-size: nth($size, 2);
         }
 
         h4 {
-            font-size: 35px;
+            font-size: nth($size, 2);
         }
     }
 
 
     .mapa {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         margin: 20px;
         flex-direction: column;
 
@@ -44,9 +42,7 @@ footer {
     }
 
     .redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
 
         a {
             margin: 10px;
@@ -57,11 +53,11 @@ footer {
             }
 
             i {
-                font-size: 50px;
-                color: #EBE4D1;
+                font-size: nth($size, 1);
+                color: $color-primario;
 
                 &:hover {
-                    color: #E55604;
+                    color: $color-secundario
                 }
             }
         }
@@ -75,11 +71,11 @@ footer {
             }
 
             i {
-                font-size: 50px;
-                color: #EBE4D1;
+                font-size: nth($size, 1);
+                color: $color-primario;
 
                 &:hover {
-                    color: #E55604;
+                    color: $color-secundario;
                 }
             }
         }

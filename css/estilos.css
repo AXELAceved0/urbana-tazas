@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
-.fondo, .nosotros div, .contactos {
+.fondo, .nosotros div, .contactos, footer .mapa, footer .redes {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -227,54 +227,47 @@ footer {
   color: #EBE4D1; }
   footer .pie {
     text-align: center;
-    color: #ebe4d1;
+    color: #EBE4D1;
     background-color: #E55604;
     font-size: 35px;
     padding: 8px;
     margin: 0; }
-  footer div {
+  footer .contacto {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 15px;
     padding: 10px; }
-    footer div h3 {
+    footer .contacto h3 {
       font-size: 35px; }
-    footer div h4 {
+    footer .contacto h4 {
       font-size: 35px; }
   footer .mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
     flex-direction: column; }
     footer .mapa h3 {
       font-size: 40px;
       padding: 10px; }
-  footer .redes {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    footer .redes a {
-      margin: 10px;
-      transition: 1s; }
-      footer .redes a:hover {
-        transform: scale(1.2); }
-      footer .redes a i {
-        font-size: 50px;
-        color: #EBE4D1; }
-        footer .redes a i:hover {
-          color: #E55604; }
-    footer .redes a {
-      margin: 10px;
-      transition: 1s; }
-      footer .redes a:hover {
-        transform: scale(1.2); }
-      footer .redes a i {
-        font-size: 50px;
-        color: #EBE4D1; }
-        footer .redes a i:hover {
-          color: #E55604; }
+  footer .redes a {
+    margin: 10px;
+    transition: 1s; }
+    footer .redes a:hover {
+      transform: scale(1.2); }
+    footer .redes a i {
+      font-size: 50px;
+      color: #EBE4D1; }
+      footer .redes a i:hover {
+        color: #E55604; }
+  footer .redes a {
+    margin: 10px;
+    transition: 1s; }
+    footer .redes a:hover {
+      transform: scale(1.2); }
+    footer .redes a i {
+      font-size: 50px;
+      color: #EBE4D1; }
+      footer .redes a i:hover {
+        color: #E55604; }
 
 /*----MEDIA QUERIES-----*/
 @media screen and (max-width: 1150px) {
@@ -307,7 +300,15 @@ footer {
   .medios h3 {
     font-size: 25px; }
   .envios h4 {
-    font-size: 35px; } }
+    font-size: 35px; }
+  footer .contacto {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    footer .contacto h3 {
+      padding: 8px; }
+    footer .contacto h4 {
+      padding: 8px; } }
 
 @media screen and (max-width: 650px) {
   .fondo {
@@ -322,13 +323,17 @@ footer {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column; }
+  .envios {
+    background-attachment: initial; }
   .nosotros div img {
     width: 390px;
     height: 390px; }
   .nosotros div p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .mapa iframe {
+    width: 500px; } }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 525px) {
   .fondo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.767)), url(../img/fondo-3.png); }
   .fondo div h1 {
@@ -350,7 +355,21 @@ footer {
   .nosotros div p {
     font-size: 15px; }
   .envios h4 {
-    font-size: 20px; } }
+    font-size: 25px; }
+  footer .contacto h4 {
+    font-size: 25px; }
+  .mapa iframe {
+    width: 400px; } }
+
+@media screen and (max-width: 450px) {
+  footer .contacto h3 {
+    font-size: 25px; }
+  footer .contacto h4 {
+    font-size: 20px; }
+  footer .mapa h3 {
+    font-size: 35px; }
+  footer .mapa iframe {
+    width: 320px; } }
 
 @media screen and (max-width: 420px) {
   .fondo div h1 {
@@ -367,7 +386,11 @@ footer {
     width: 320px;
     height: 320px; }
   .nosotros div p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  footer .mapa h3 {
+    font-size: 25px; }
+  footer .mapa iframe {
+    width: 300px; } }
 
 @media screen and (max-width: 375px) {
   header .menu div a img {

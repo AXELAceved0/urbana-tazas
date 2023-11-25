@@ -26,6 +26,7 @@ header .menu div .barra {
     padding: 10px;
     margin: 5px;
     transition: 1s;
+    font-size: 35px;
 }
 
 header .menu div .barra:hover {
@@ -308,7 +309,7 @@ footer .pie {
     margin: 0;
 }
 
-footer .contacto {
+footer div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -316,11 +317,11 @@ footer .contacto {
     padding: 10px;
 }
 
-footer .contacto h3{
+footer div h3{
     font-size: 35px;
 }
 
-footer .contacto h4{
+footer div h4{
     font-size: 35px;
 }
 

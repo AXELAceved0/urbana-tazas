@@ -10,42 +10,121 @@
 }
 
 /** -----HEADER----- */
-header .menu {
+
+header {
+    display: flex;
+    align-items: center;
     background-color: #EBE4D1;
-    color: #E55604;
+    justify-content: space-between;
+    padding: 2rem;
     font-size: 20px;
-    padding: 10px;
 }
 
-header .menu:hover {
-    color: #26577C;
-}
-
-header .menu div .barra {
+header nav ul li a {
+    text-decoration: none;
     color: #E55604;
-    padding: 10px;
-    margin: 5px;
-    transition: 1s;
-    font-size: 35px;
 }
 
-header .menu div .barra:hover {
-    background-color: #E55604;
-    color: #EBE4D1;
-    border-radius: 4px;
-    transform: scale(1.1);
+.nav {
+    margin-right: 1rem;
+
 }
 
-header nav div a img {
-    width: 435px;
-    height: 110px;
+.nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 19px;
+}
+
+.nav li:last-child {
+    background: #EBE4D1;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+
+
+.abrir-menu {
+    font-size: 30px;
+    border: solid 1px;
+    color: #E55604;
+}
+
+.abrir-menu, #check{
+    display: none;
+}
+
+
+header img {
+    width: 410px;
+    height: 100px;
     object-fit: cover;
     transition: 1s;
 }
 
-header nav div a img:hover {
-    transform: scale(1.1);
+@media screen and (max-width:1065px) {
+    header img {
+        width: 330px;
+    }
 }
+
+@media screen and (max-width:985px) {
+    .nav ul {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav ul{
+        font-size: 13;
+    }
+    
+    header img {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .checkboton{
+        display: block;
+    }
+    .nav i{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .nav ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #E55604;
+        width: 100%;
+        height: 50vh;
+        right: 0;
+        color: #EBE4D1;
+    }
+
+    .nav ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
+
+
 
 
 /** ----- MAIN ----*/
@@ -317,23 +396,23 @@ footer div {
     padding: 10px;
 }
 
-footer div h3{
+footer div h3 {
     font-size: 35px;
 }
 
-footer div h4{
+footer div h4 {
     font-size: 35px;
 }
 
-footer .mapa{
-    display: flex; 
+footer .mapa {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
     flex-direction: column;
 }
 
-footer .mapa h3{
+footer .mapa h3 {
     font-size: 40px;
     padding: 10px;
 }
@@ -532,7 +611,7 @@ footer div a i:hover {
 
 /*----acordeon*/
 
-.acordeon-1{
+.acordeon-1 {
     background-color: #26577C;
     color: #ebe4d1;
     font-size: 28px;
@@ -543,20 +622,19 @@ footer div a i:hover {
     border: transparent;
 }
 
-.acordeon-1 .acordeon-2 button{
+.acordeon-1 .acordeon-2 button {
     background-color: #26577C;
     color: #ebe4d1;
     font-size: 28px;
     width: 400px;
 }
 
-.acordeon-1 div ul li{
+.acordeon-1 div ul li {
     font-size: 25px;
     color: #ebe4d1;
     width: 330px;
 }
 
-.acordeon-2 button h3 i{
+.acordeon-2 button h3 i {
     padding: 8px;
 }
-

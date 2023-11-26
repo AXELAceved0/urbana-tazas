@@ -1,4 +1,13 @@
 /*----MEDIA QUERIES-----*/
+@media screen and (max-width:1200px){
+.nosotros{
+    div{
+        p{
+            font-size: nth($size ,5 );
+        }
+    }
+}
+}
 
 @media screen and (max-width:1150px) {
     .nosotros {
@@ -13,6 +22,9 @@
             img {
                 width: 600px;
                 height: 600px;
+            }
+            p{
+                font-size:nth($size ,3 );
             }
         }
 

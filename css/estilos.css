@@ -20,7 +20,8 @@ header nav .nav-bar {
   list-style-type: none;
   position: relative;
   background-color: #EBE4D1;
-  padding: 12px 20px; }
+  padding: 12px 20px;
+  margin: 0; }
   header nav .nav-bar img {
     width: 120px; }
   header nav .nav-bar .menu {

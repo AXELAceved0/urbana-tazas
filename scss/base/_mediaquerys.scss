@@ -65,6 +65,43 @@
     }
 }
 
+@media screen and (max-width:835px) {
+	.menu {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 100;
+		background-color: #EBE4D1;
+		transition: all 0.2s ease-in-out;
+		li {
+			margin-top: 40px;
+			a {
+				padding: 10px;
+			}
+		}
+	}
+	.abrir-menu {
+		display: block;
+	}
+	.cerrar-menu {
+		display: block;
+	}
+	#check {
+		&:checked {
+			~ {
+				.menu {
+					right: 0;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 780px) {
     .medios {
         h3 {

@@ -10,43 +10,105 @@
 }
 
 /** -----HEADER----- */
-header .menu {
+header nav .nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
     background-color: #EBE4D1;
+    padding: 12px 20px;
+}
+
+header nav .nav-bar img{
+    width: 120px;
+}
+
+header nav .nav-bar .menu{
+    display: flex;
+    font-size: 17px;
+}
+header nav .nav-bar .menu li{
+    padding-left: 30px;
+}
+header nav .nav-bar .menu li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
     color: #E55604;
-    font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
-header .menu:hover {
-    color: #26577C;
-}
-
-header .menu div .barra {
-    color: #E55604;
-    padding: 10px;
-    margin: 5px;
-    transition: 1s;
-    font-size: 35px;
-}
-
-header .menu div .barra:hover {
+header nav .nav-bar .menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
     background-color: #E55604;
-    color: #EBE4D1;
-    border-radius: 4px;
-    transform: scale(1.1);
+    transition: 0.15s ease-in-out;
 }
 
-header nav div a img {
-    width: 435px;
-    height: 110px;
-    object-fit: cover;
-    transition: 1s;
+header nav .nav-bar .menu li a:hover:after{
+    width: 100%;
 }
 
-header nav div a img:hover {
-    transform: scale(1.1);
+.abrir-menu, .cerrar-menu{
+    position: absolute;
+    color: #E55604;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.abrir-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
+.cerrar-menu{
+    top: 20px;
+    right: 20px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media screen and (max-width:835px) {
+.menu{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #EBE4D1;
+    transition: all 0.2s ease-in-out;
+}
+.menu li{
+    margin-top: 40px;
+}
+.menu li a{
+    padding: 10px;
+}
+.abrir-menu, .cerrar-menu{
+    display:block;
+}
+#check:checked ~ .menu{
+    right: 0;
+}
+}
 
 /** ----- MAIN ----*/
 .fondo {
@@ -317,23 +379,23 @@ footer div {
     padding: 10px;
 }
 
-footer div h3{
+footer div h3 {
     font-size: 35px;
 }
 
-footer div h4{
+footer div h4 {
     font-size: 35px;
 }
 
-footer .mapa{
-    display: flex; 
+footer .mapa {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
     flex-direction: column;
 }
 
-footer .mapa h3{
+footer .mapa h3 {
     font-size: 40px;
     padding: 10px;
 }
@@ -532,7 +594,7 @@ footer div a i:hover {
 
 /*----acordeon*/
 
-.acordeon-1{
+.acordeon-1 {
     background-color: #26577C;
     color: #ebe4d1;
     font-size: 28px;
@@ -543,20 +605,19 @@ footer div a i:hover {
     border: transparent;
 }
 
-.acordeon-1 .acordeon-2 button{
+.acordeon-1 .acordeon-2 button {
     background-color: #26577C;
     color: #ebe4d1;
     font-size: 28px;
     width: 400px;
 }
 
-.acordeon-1 div ul li{
+.acordeon-1 div ul li {
     font-size: 25px;
     color: #ebe4d1;
     width: 330px;
 }
 
-.acordeon-2 button h3 i{
+.acordeon-2 button h3 i {
     padding: 8px;
 }
-

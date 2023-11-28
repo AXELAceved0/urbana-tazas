@@ -8,7 +8,7 @@ header {
 			align-items: center;
 			list-style-type: none;
 			position: relative;
-			background-color: #EBE4D1;
+			background-color: $color-primario;
 			padding: 12px 20px;
             margin: 0;
 			img {
@@ -16,7 +16,7 @@ header {
 			}
 			.menu {
 				display: flex;
-				font-size: 17px;
+				font-size: nth($size, 5 );
 				li {
 					padding-left: 30px;
 					a {
@@ -26,7 +26,7 @@ header {
 						transition: 0.15s ease-in-out;
 						position: relative;
 						text-transform: uppercase;
-						color: #E55604;
+						color: $color-secundario;
 						padding: 5px;
 						&::after {
 							content: "";
@@ -35,7 +35,7 @@ header {
 							left: 0;
 							width: 0;
 							height: 2px;
-							background-color: #E55604;
+							background-color: $color-secundario;
 							transition: 0.15s ease-in-out;
 						}
 						&:hover {
@@ -51,7 +51,7 @@ header {
 }
 .abrir-menu {
 	position: absolute;
-	color: #E55604;
+	color: $color-secundario;
 	cursor: pointer;
 	font-size: 1.5rem;
 	display: none;
@@ -61,7 +61,7 @@ header {
 }
 .cerrar-menu {
 	position: absolute;
-	color: #E55604;
+	color: $color-secundario;
 	cursor: pointer;
 	font-size: 1.5rem;
 	display: none;

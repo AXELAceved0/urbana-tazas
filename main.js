@@ -1,6 +1,11 @@
-//let nombre = prompt("como te llamas");
-//let apellido = prompt("cual es tu apellido");
-//let edad = Number(prompt("caul es tu edad"));
-//let trabajo = prompt("cual es tu trabajo");
+let jugador = Number(prompt("elije 1 piedra, 2 papel o 3 tijeras:"));
 
-//console.log("Me llamo " +  nombre + " " + apellido +  " tengo " + " " + edad + " años " + " trabajo de " + trabajo + " ");
+if( jugador == 1){
+    alert("elejiste piedra")
+}else if(jugador == 2 ){
+    alert("elejiste papel")
+}else if(jugador == 3){
+    alert("elejiste tijera")
+}else{
+    alert("elije una opcion correcta")
+}

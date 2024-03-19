@@ -260,7 +260,9 @@ footer {
   display: flex;
   background-color: #26577C;
   flex-direction: column;
-  color: #EBE4D1; }
+  color: #EBE4D1;
+  height:100vh;
+}
   footer .pie {
     text-align: center;
     color: #EBE4D1;
